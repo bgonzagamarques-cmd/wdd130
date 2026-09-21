@@ -1,0 +1,127 @@
+/* 1. Definição de Variáveis no :root */
+:root {
+    --fonte-titulo: "Georgia", serif;
+    --fonte-body: "Arial", sans-serif;
+    --cor-primaria: #009c3b;      /* Verde vibrante */
+    --cor-secundaria: #ffdf00;    /* Amarelo bandeira */
+    --cor-destaque1: #002776;     /* Azul escuro de contraste */
+    --cor-fundo: #f4f4f4;
+}
+
+/* 4. Redefinição Universal (box-model) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 5. Estilização do corpo */
+body {
+    font-family: var(--fonte-body);
+    color: var(--cor-destaque1);
+    background-color: var(--cor-fundo);
+}
+
+/* 6. Limite de largura e centralização */
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+/* 7. Estilização de títulos */
+h1, h2 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-primaria);
+    text-align: center;
+}
+
+/* 8. Estilos básicos para navegação, parágrafos e secções */
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* 9. Remover sublinhado dos links de redes sociais */
+.redes-sociais a {
+    text-decoration: none;
+}
+
+/* Estilização do Hero e Sobreposição */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.9;
+    background-color: var(--cor-primaria);
+    color: #ffdf00; /* Letras em amarelo sobre fundo verde */
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 8px;
+    border-top: 4px solid var(--cor-secundaria);
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    margin-left: 1rem;
+    border-radius: 4px;
+}
+
+/* Estilos de Cabeçalho e Rodapé */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 4px solid var(--cor-secundaria);
+}
+
+header img {
+    width: 150px;
+    height: auto;
+}
+
+header nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: var(--cor-primaria);
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-top: 4px solid var(--cor-primaria);
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 15px;
+}
+
+.redes-sociais img {
+    width: 30px;
+    height: 30px;
+}
