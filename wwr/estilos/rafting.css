@@ -43,7 +43,7 @@ nav, p, section, article {
 }
 
 /* 9. Remover sublinhado dos links de social media */
-.redes-sociais a {
+.socialmedia a {
     text-decoration: none;
 }
 
@@ -66,7 +66,7 @@ nav, p, section, article {
     text-align: center;
     opacity: 0.9;
     background-color: var(--cor-primaria);
-    color: #ffdf00; /* Letras em amarelo sobre fundo verde */
+    color: #e6c200;
 }
 
 .hero article {
@@ -116,15 +116,16 @@ footer {
     border-top: 4px solid var(--cor-primaria);
 }
 
-.redes-sociais {
+.socialmedia {
     display: flex;
     gap: 15px;
 }
 
-.redes-sociais img {
+.socialmedia img {
     width: 30px;
     height: 30px;
 }
+
 /* ========================================== */
 /* Ajustes para a Seção de História           */
 /* ========================================== */
@@ -140,7 +141,7 @@ footer {
 }
 
 .historia-grid figure {
-    flex: 0 0 180px; /* Define um tamanho fixo e elegante para a imagem do meio */
+    flex: 0 0 180px;
     margin: 0;
 }
 
@@ -152,7 +153,7 @@ footer {
 }
 
 /* ========================================== */
-/* Ajustes para a Galeria de Aventura (5 fotos) */
+/* Ajustes GALERIA(5 fotos) */
 /* ========================================== */
 .galeria-aventura {
     display: flex;
@@ -171,8 +172,8 @@ footer {
 
 .galeria-aventura img {
     width: 100%;
-    height: 110px; /* Deixa todas as 5 imagens com a mesma altura padronizada */
-    object-fit: cover; /* Evita que a foto fique distorcida */
+    height: 110px;
+    object-fit: cover;
     border-radius: 4px;
     display: block;
 }
@@ -183,26 +184,3 @@ footer {
     color: var(--cor-destaque1);
     font-weight: bold;
 }
-.galeria-aventura {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-top: 15px;
-}
-
-.galeria-aventura figure {
-    flex: 1;
-    min-width: 120px;
-    margin: 0;
-    text-align: center;
-}
-
-.galeria-aventura img {
-    display: block;
-    width: 100%;
-    height: 110px;
-    object-fit: cover;
-    border-radius: 4px;
-}
-
