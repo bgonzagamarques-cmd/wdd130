@@ -2,8 +2,8 @@
 :root {
     --fonte-titulo: "Georgia", serif;
     --fonte-body: "Arial", sans-serif;
-    --cor-primaria: #009c3b;      /* Verde vibrante */
-    --cor-secundaria: #ffdf00;    /* Amarelo bandeira */
+    --cor-primaria: #007A2C;      /* Verde vibrante */
+    --cor-secundaria: #ccb200;    /* Amarelo bandeira */
     --cor-destaque1: #002776;     /* Azul escuro de contraste */
     --cor-fundo: #f4f4f4;
 }
@@ -42,7 +42,7 @@ nav, p, section, article {
     padding: 8px;
 }
 
-/* 9. Remover sublinhado dos links de redes sociais */
+/* 9. Remover sublinhado dos links de social media */
 .redes-sociais a {
     text-decoration: none;
 }
@@ -206,9 +206,3 @@ footer {
     border-radius: 4px;
 }
 
-.galeria-aventura figcaption {
-    font-size: 0.85rem;
-    margin-top: 6px;
-    color: var(--cor-destaque1);
-    font-weight: bold;
-}
