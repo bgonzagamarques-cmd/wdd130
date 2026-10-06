@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página Sobre Nós da empresa de rafting Rio Abaixo Rafting, conheça nossa história, compromisso e aventuras.">
+    <meta name="author" content="Beatriz Gonzaga">
+    <title>Rio Abaixo Rafting - Fale Conosco</title>
+    <link rel="stylesheet" href="estilos/rafting.css">
+</head>
+<body>
+
+    <header>
+        <img src="imagens/logo.jpg" alt="Logotipo Rio Abaixo Rafting">
+        <nav>
+            <a href="index.html">Página Inicial</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="passeios.html">Passeios</a>
+            <a href="contato.html">Fale Conosco</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Bloco Hero com a imagem de fundo e título -->
+        <div class="hero">
+            <img src="imagens/imagem-fundo.jpg" alt="Equipe de rafting navegando nas corredeiras">
+            <h1>Fale Conosco</h1>
+            <article>
+                <h2>Companhia de Rafting em Corredeiras</h2>
+                <p><strong>Endereço:</strong> Rua do Tesouro, Salvador, Bahia</p>
+                <p><strong>Telefone:</strong> +55 71 98630-1234</p>
+                <p><strong>E-mail:</strong> raftingsalvador@mundo.com</p>
+            </article>
+        </div>
+
+        <!-- Seção de Localização e o Mapa do Google -->
+        <section class="historia">
+            <h2>Nossa Localização</h2>
+            <div class="historia-grid">
+                <p>Venha nos visitar ou tirar suas dúvidas diretamente conosco. Estamos localizados no coração de Salvador, prontos para organizar a sua próxima aventura nas corredeiras com toda a segurança e diversão!</p>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.496542731557!2d-38.5283!3d-12.9714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU4JzE3LjEiUyAzOMKwMzEnNDEuOSJX!5e0!3m2!1spt-BR!2sbr!4v1600000000000!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção do Formulário de Contato -->
+        <section class="aventura">
+            <h2>Envie a sua Mensagem</h2>
+            <form action="#" method="post" style="max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; gap: 15px; text-align: left;">
+                <div>
+                    <label for="name" style="display: block; font-weight: bold; margin-bottom: 5px;">Nome do Usuário:</label>
+                    <input type="text" id="name" name="name" required placeholder="Digite aqui" style="width: 100%; padding: 8px;">
+                </div>
+
+                <div>
+                    <label for="email" style="display: block; font-weight: bold; margin-bottom: 5px;">Endereço de E-mail:</label>
+                    <input type="email" id="email" name="email" required placeholder="Digite aqui" style="width: 100%; padding: 8px;">
+                </div>
+
+                <fieldset style="border: 1px solid #ccc; padding: 15px; border-radius: 4px;">
+                    <legend style="font-weight: bold; padding: 0 5px;">Finalidade da Mensagem</legend>
+                    <div style="margin-bottom: 8px;">
+                        <input type="radio" id="general" name="purpose" value="consulta-geral" checked>
+                        <label for="general">Consulta Geral</label>
+                    </div>
+                    <div style="margin-bottom: 8px;">
+                        <input type="radio" id="reservation" name="purpose" value="pergunta-reserva">
+                        <label for="reservation">Pergunta sobre Reserva</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="suggestion" name="purpose" value="sugestao-site">
+                        <label for="suggestion">Sugestão de Site</label>
+                    </div>
+                </fieldset>
+
+                <div>
+                    <label for="message" style="display: block; font-weight: bold; margin-bottom: 5px;">Mensagem:</label>
+                    <textarea id="message" name="message" rows="4" required placeholder="Digite aqui" style="width: 100%; padding: 8px;"></textarea>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Por favor, me inscreva na newsletter mensal</label>
+                </div>
+
+                <button type="submit" style="padding: 10px 20px; background-color: #2c5282; color: #fff; border: none; font-weight: bold; cursor: pointer; border-radius: 4px;">Entrar em Contato!</button>
+            </form>
+        </section>
+
+        <!-- Seção dos Funcionários (usando as imagens .jpeg corretas) -->
+        <section class="aventura">
+            <h2>Estamos Aqui para Serví-lo</h2>
+            <div class="galeria-aventura">
+                <figure>
+                    <img src="imagens/funcionario_homem.jpg" alt="Carlos Silva">
+                    <figcaption>Carlos Silva - Guia Chefe</figcaption>
+                </figure>
+                <figure>
+                    <img src="imagens/funcionaria_mulher.jpg" alt="Ana Souza">
+                    <figcaption>Ana Souza - Especialista em Reservas</figcaption>
+                </figure>
+                <figure>
+                    <img src="imagens/atendente.jpg" alt="Ivína Lima">
+                    <figcaption>Ivína Lima - Atendente de Suporte</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Rio Abaixo Rafting - Beatriz Gonzaga</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com" target="_blank">
+                <img src="imagens/facebook.png" alt="Ícone do Facebook">
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+                <img src="imagens/linkedin.jpg" alt="Ícone do LinkedIn">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="imagens/instagram.jpg" alt="Ícone do Instagram">
+            </a>
+        </nav>
+    </footer>
+
+</body>
+</html>

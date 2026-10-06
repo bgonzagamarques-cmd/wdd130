@@ -184,3 +184,53 @@ footer {
     color: var(--cor-destaque1);
     font-weight: bold;
 }
+/* Estilos para a Página Fale Conosco */
+.contact-info {
+    margin: 20px 0;
+}
+
+.contact-form-section form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form-section label {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.contact-form-section input[type="text"],
+.contact-form-section input[type="email"],
+.contact-form-section textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.contact-form-section fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.employee-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.employee-grid figure {
+    max-width: 200px;
+}
+
+.employee-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
