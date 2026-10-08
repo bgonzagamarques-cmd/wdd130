@@ -71,7 +71,7 @@ footer {
     border-top: 4px solid var(--cor-primaria);
 }
 
-/* Redes Sociais no rodapé (para o auditor e com tamanho correto) */
+/* Redes Sociais no rodapé */
 .redes-sociais {
     display: flex;
     gap: 15px;
@@ -85,8 +85,8 @@ footer {
 }
 
 .redes-sociais a img {
-    width: 32px;
-    height: 32px;
+    width: 30px;
+    height: 30px;
     object-fit: contain;
 }
 
@@ -131,7 +131,7 @@ footer {
 }
 
 /* ========================================== */
-/* Ajustes para a Seção de História           */
+/* Seção de História e Localização            */
 /* ========================================== */
 .historia-grid {
     display: flex;
@@ -145,7 +145,7 @@ footer {
 }
 
 .historia-grid .map {
-    width: 100%;
+    flex: 1;
 }
 
 .historia-grid iframe {
@@ -155,7 +155,7 @@ footer {
 }
 
 /* ========================================== */
-/* Ajustes GALERIA / FUNCIONÁRIOS             */
+/* Galeria de Funcionários                    */
 /* ========================================== */
 .galeria-aventura {
     display: flex;
@@ -188,7 +188,7 @@ footer {
 }
 
 /* ========================================== */
-/* Estilos para o Formulário de Contato       */
+/* Formulário de Contato                      */
 /* ========================================== */
 .form-contato {
     max-width: 600px;
@@ -230,21 +230,6 @@ footer {
     padding: 0 5px;
 }
 
-.radio-grupo {
-    margin-bottom: 8px;
-    display: flex;
-    flex-direction: row !important;
-    align-items: center;
-    gap: 8px;
-}
-
-.checkbox-grupo {
-    display: flex;
-    flex-direction: row !important;
-    align-items: center;
-    gap: 8px;
-}
-
 .form-contato button[type="submit"] {
     padding: 10px 20px;
     background-color: var(--cor-primaria);
@@ -254,42 +239,4 @@ footer {
     cursor: pointer;
     border-radius: 4px;
     align-self: flex-start;
-}
-/* ========================================== */
-/* Correção do Layout: Localização (Texto e Mapa) */
-/* ========================================== */
-.historia-grid {
-    display: flex;
-    align-items: flex-start; /* Alinha o texto e o mapa pelo topo */
-    gap: 20px;
-    flex-wrap: wrap; /* Garante que se ajustar a tela não quebre */
-}
-
-.historia-grid p {
-    flex: 1;
-    min-width: 250px;
-    margin: 0;
-}
-
-.historia-grid .map {
-    flex: 1;
-    min-width: 280px;
-}
-
-/* ========================================== */
-/* Correção dos botões de rádio e checkbox     */
-/* ========================================== */
-.form-contato fieldset div,
-.fieldset-contato div {
-    display: flex;
-    flex-direction: row !important; /* Força ficar lado a lado */
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 8px;
-}
-
-.form-contato input[type="radio"],
-.form-contato input[type="checkbox"] {
-    margin: 0;
-    width: auto !important; /* Impede que o input ocupe a largura toda */
 }
