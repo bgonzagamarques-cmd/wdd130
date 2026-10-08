@@ -42,9 +42,52 @@ nav, p, section, article {
     padding: 8px;
 }
 
-/* 9. Remover sublinhado dos links de social media */
-.socialmedia a {
+/* Estilos de Cabeçalho e Rodapé */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 4px solid var(--cor-secundaria);
+}
+
+header img {
+    width: 150px;
+    height: auto;
+}
+
+header nav a {
+    margin-left: 15px;
     text-decoration: none;
+    color: var(--cor-primaria);
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-top: 4px solid var(--cor-primaria);
+}
+
+/* Redes Sociais no rodapé (para o auditor e com tamanho correto) */
+.redes-sociais {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.redes-sociais a {
+    text-decoration: none;
+}
+
+.redes-sociais a img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
 }
 
 /* Estilização do Hero e Sobreposição */
@@ -87,45 +130,6 @@ nav, p, section, article {
     border-radius: 4px;
 }
 
-/* Estilos de Cabeçalho e Rodapé */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    border-bottom: 4px solid var(--cor-secundaria);
-}
-
-header img {
-    width: 150px;
-    height: auto;
-}
-
-header nav a {
-    margin-left: 15px;
-    text-decoration: none;
-    color: var(--cor-primaria);
-    font-weight: bold;
-}
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    border-top: 4px solid var(--cor-primaria);
-}
-
-.socialmedia {
-    display: flex;
-    gap: 15px;
-}
-
-.socialmedia img {
-    width: 30px;
-    height: 30px;
-}
-
 /* ========================================== */
 /* Ajustes para a Seção de História           */
 /* ========================================== */
@@ -140,97 +144,152 @@ footer {
     margin: 0;
 }
 
-.historia-grid figure {
-    flex: 0 0 180px;
-    margin: 0;
+.historia-grid .map {
+    width: 100%;
 }
 
-.historia-grid figure img {
+.historia-grid iframe {
     width: 100%;
-    height: auto;
-    border-radius: 4px;
-    display: block;
+    height: 300px;
+    border: 0;
 }
 
 /* ========================================== */
-/* Ajustes GALERIA(5 fotos) */
+/* Ajustes GALERIA / FUNCIONÁRIOS             */
 /* ========================================== */
 .galeria-aventura {
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    gap: 15px;
     flex-wrap: wrap;
     margin-top: 15px;
+    text-align: center;
 }
 
 .galeria-aventura figure {
     flex: 1;
-    min-width: 120px;
+    min-width: 200px;
     margin: 0;
-    text-align: center;
 }
 
 .galeria-aventura img {
     width: 100%;
-    height: 110px;
+    height: 180px;
     object-fit: cover;
-    border-radius: 4px;
+    border-radius: 8px;
     display: block;
 }
 
 .galeria-aventura figcaption {
-    font-size: 0.85rem;
-    margin-top: 6px;
+    font-size: 0.9rem;
+    margin-top: 8px;
     color: var(--cor-destaque1);
     font-weight: bold;
 }
-/* Estilos para a Página Fale Conosco */
-.contact-info {
-    margin: 20px 0;
-}
 
-.contact-form-section form {
+/* ========================================== */
+/* Estilos para o Formulário de Contato       */
+/* ========================================== */
+.form-contato {
     max-width: 600px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 15px;
+    text-align: left;
 }
 
-.contact-form-section label {
-    font-weight: bold;
-    margin-top: 5px;
-}
-
-.contact-form-section input[type="text"],
-.contact-form-section input[type="email"],
-.contact-form-section textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 100%;
-}
-
-.contact-form-section fieldset {
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 4px;
-}
-
-.employee-grid {
+.form-contato div {
     display: flex;
-    justify-content: space-around;
-    gap: 20px;
-    text-align: center;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
-.employee-grid figure {
-    max-width: 200px;
+.form-contato label {
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
-.employee-grid img {
+.form-contato input[type="text"],
+.form-contato input[type="email"],
+.form-contato textarea {
     width: 100%;
-    height: auto;
-    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.fieldset-contato {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.fieldset-contato legend {
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+.radio-grupo {
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    gap: 8px;
+}
+
+.checkbox-grupo {
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    gap: 8px;
+}
+
+.form-contato button[type="submit"] {
+    padding: 10px 20px;
+    background-color: var(--cor-primaria);
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    align-self: flex-start;
+}
+/* ========================================== */
+/* Correção do Layout: Localização (Texto e Mapa) */
+/* ========================================== */
+.historia-grid {
+    display: flex;
+    align-items: flex-start; /* Alinha o texto e o mapa pelo topo */
+    gap: 20px;
+    flex-wrap: wrap; /* Garante que se ajustar a tela não quebre */
+}
+
+.historia-grid p {
+    flex: 1;
+    min-width: 250px;
+    margin: 0;
+}
+
+.historia-grid .map {
+    flex: 1;
+    min-width: 280px;
+}
+
+/* ========================================== */
+/* Correção dos botões de rádio e checkbox     */
+/* ========================================== */
+.form-contato fieldset div,
+.fieldset-contato div {
+    display: flex;
+    flex-direction: row !important; /* Força ficar lado a lado */
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.form-contato input[type="radio"],
+.form-contato input[type="checkbox"] {
+    margin: 0;
+    width: auto !important; /* Impede que o input ocupe a largura toda */
 }
